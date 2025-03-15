@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greeno Delivery</title>
     <style>
-        /* Styling for the navigation bar */
+        /* General Styles */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
         }
+
+        /* Navigation Bar */
         .navbar {
             background-color: white;
             padding: 15px 20px;
@@ -38,7 +40,7 @@
             font-size: 18px;
         }
 
-        /* Hero Section Styling */
+        /* Hero Section */
         .hero {
             background-color: #222222;
             padding: 100px 20px;
@@ -138,46 +140,114 @@
             opacity: 0.8;
         }
 
-        /* Footer Styling */
+        /* Footer */
         .footer {
             background-color: #222;
             color: white;
             padding: 40px 20px;
             text-align: center;
-            margin-top: 0px;
         }
-        .footer h3 {
-            font-size: 22px;
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .footer-section {
+            width: 30%;
+            min-width: 250px;
+        }
+        .footer-section h3 {
+            font-size: 20px;
             margin-bottom: 10px;
         }
-        .footer p {
+        .footer-section p, .footer-section a {
             font-size: 16px;
-            margin-bottom: 20px;
-            color: #bbb;
-        }
-        .footer .footer-links {
-            margin-bottom: 20px;
-        }
-        .footer .footer-links a {
             color: white;
+            display: block;
             text-decoration: none;
-            margin: 0 10px;
-            font-size: 16px;
+            margin-bottom: 8px;
         }
-        .footer .footer-links a:hover {
+        .footer-section a:hover {
+            color: white;
             text-decoration: underline;
         }
-        .footer .contact-info {
-            font-size: 16px;
-            color: #bbb;
+        .footer-divider {
+            border: 0;
+            height: 1px;
+            background: white;
+            margin: 20px auto;
+            width: 100%;
         }
-        .footer .contact-info p {
-            margin: 5px 0;
-        }
-        .footer .copyright {
-            margin-top: 20px;
+        .copyright {
             font-size: 14px;
             color: white;
+            margin-top: 10px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media only screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px;
+            }
+            .navbar .menu {
+                flex-direction: column;
+                width: 100%;
+            }
+            .navbar .menu li {
+                margin: 10px 0;
+            }
+            .hero {
+                padding: 60px 20px;
+            }
+            .hero h1 {
+                font-size: 28px;
+            }
+            .hero p {
+                font-size: 16px;
+            }
+            .hero .btn {
+                font-size: 16px;
+                padding: 8px 16px;
+            }
+            .work-steps {
+                flex-direction: column;
+                align-items: center;
+            }
+            .step {
+                width: 100%;
+                max-width: 300px;
+                margin-bottom: 20px;
+            }
+            .step img {
+                height: auto;
+            }
+            .ready-to-ship {
+                padding: 40px 20px;
+            }
+            .ready-to-ship h2 {
+                font-size: 24px;
+            }
+            .ready-to-ship p {
+                font-size: 16px;
+            }
+            .ready-to-ship .btn-contact {
+                font-size: 16px;
+                padding: 8px 16px;
+            }
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .footer-section {
+                width: 100%;
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
