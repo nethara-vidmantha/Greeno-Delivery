@@ -6,6 +6,7 @@
     <title>About Us - Greeno Delivery</title>
     <link rel="icon" href="icon/favicon-32x32.png" type="image/png">
     <style>
+        /* General Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -13,6 +14,8 @@
             background-color: black;
             color: white;
         }
+
+        /* Navigation Bar */
         .navbar {
             background-color: white;
             padding: 15px 20px;
@@ -40,6 +43,8 @@
             color: black;
             font-size: 18px;
         }
+
+        /* Container Styling */
         .container {
             width: 80%;
             margin: auto;
@@ -58,18 +63,57 @@
             list-style-type: none;
             padding: 0;
         }
+
+        /* Media Queries for Horizontal Layout on Mobile */
+        @media only screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: row; /* Keep items in a row */
+                padding: 10px 20px; /* Adjust padding */
+            }
+            .navbar .menu {
+                flex-direction: row; /* Keep menu items in a row */
+            }
+            .navbar .menu li {
+                margin: 0 10px; /* Reduce margin for smaller screens */
+            }
+            .navbar .logo {
+                font-size: 20px;
+            }
+            .navbar .menu li a {
+                font-size: 16px;
+            }
+
+            /* Adjust Container for Mobile */
+            .container {
+                width: 90%; /* Increase width for better readability */
+                padding: 10px;
+            }
+            h1 {
+                font-size: 24px; /* Adjust heading size */
+            }
+            h2 {
+                font-size: 20px; /* Adjust subheading size */
+            }
+            p, ul li {
+                font-size: 14px; /* Adjust text size */
+                line-height: 1.5; /* Adjust line height */
+            }
+        }
     </style>
 </head>
 <body>
+    <!-- Navigation Bar -->
     <div class="navbar">
         <div class="logo">About us</div>
         <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="https://wa.me/0769833981" target="_blank">Contact Us</a></li>
+            <li><a href="https://wa.me/+94769833981" target="_blank">Contact Us</a></li>
         </ul>
     </div>
+
+    <!-- Main Content -->
     <div class="container">
         <h1>About Us</h1>
         <p>At <strong>Greeno Delivery</strong>, we believe that convenience should be just a click away. Whether you need food from your favorite restaurant, groceries from the supermarket, or essential items from any store, we ensure that your orders are delivered safely and on time.</p>

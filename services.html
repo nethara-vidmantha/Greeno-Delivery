@@ -6,10 +6,13 @@
     <title>Our Services</title>
     <link rel="icon" href="icon/favicon-32x32.png" type="image/png">
     <style>
+        /* General Styles */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
         }
+
+        /* Navigation Bar */
         .navbar {
             background-color: white;
             padding: 15px 20px;
@@ -37,44 +40,81 @@
             color: black;
             font-size: 18px;
         }
+
+        /* Hero Section */
         .hero {
             background-color: #222222;
             padding: 100px 20px;
             text-align: left;
             color: white;
-            font-weight:500;
-            font-size:x-large;
-            font-family:Arial;
-            
+            font-weight: 500;
+            font-size: x-large;
+            font-family: Arial;
         }
-        p{
-            line-height: 2; 
+        .hero p {
+            line-height: 2;
         }
-        img{
+
+        /* Image Styling */
+        img {
             opacity: 0.5;
+            width: 100%;
+            height: auto;
+        }
+
+        /* Media Queries for Horizontal Layout on Mobile */
+        @media only screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: row; /* Keep items in a row */
+                padding: 10px 20px; /* Adjust padding */
+            }
+            .navbar .menu {
+                flex-direction: row; /* Keep menu items in a row */
+            }
+            .navbar .menu li {
+                margin: 0 10px; /* Reduce margin for smaller screens */
+            }
+            .navbar .logo {
+                font-size: 20px;
+            }
+            .navbar .menu li a {
+                font-size: 16px;
+            }
+
+            /* Adjust Hero Section for Mobile */
+            .hero {
+                padding: 60px 20px;
+                font-size: large;
+            }
+            .hero p {
+                line-height: 1.6;
+            }
         }
     </style>
 </head>
 <body>
-    <!--Services bar-->
+    <!-- Navigation Bar -->
     <div class="navbar">
         <div class="logo">Services</div>
         <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="https://wa.me/0769833981" target="_blank">Contact Us</a></li>
+            <li><a href="https://wa.me/+94769833981" target="_blank">Contact Us</a></li>
         </ul>
     </div>
-    <!--Second section-->
+
+    <!-- Hero Section -->
     <div class="hero">
-        <p>At Greeno Delivery, we bring convenience to your doorstep. Whether you need food from your favorite 
+        <p>
+            At Greeno Delivery, we bring convenience to your doorstep. Whether you need food from your favorite 
             <br> restaurant, groceries from the supermarket, or any essential items from any store, we've got you covered. 
             <br> Our reliable and fast delivery service ensures that whatever you need reaches you safely and on time. 
             <br> No matter where it is or what it is, we’ll deliver it to you—quickly and hassle-free!
         </p>
     </div>
-    <img src="images/HOSTEL.png" height="100%" width="100%">
-    
+
+    <!-- Image -->
+    <img src="images/HOSTEL.png" alt="Delivery Service">
 </body>
 </html>
