@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeno Delivery</title>
+    <style>
+        /* Styling for the navigation bar */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+        }
+        .navbar .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .navbar .menu li {
+            margin: 0 15px;
+        }
+        .navbar .menu li a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+
+        /* Hero Section Styling */
+        .hero {
+            background-color: #222222;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 36px;
+            color: white;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 20px;
+            color: white;
+            margin-bottom: 20px;
+        }
+        .hero .btn-container {
+            margin-top: 20px;
+        }
+        .hero .btn {
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+            display: inline-block;
+        }
+        .btn-services {
+            background-color: black;
+            color: white;
+        }
+        .btn-contact {
+            background-color: black;
+            color: white;
+        }
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        /* How It Works Section */
+        .how-it-works {
+            font-weight: bold;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .how-it-works h2 {
+            font-size: 30px;
+            color: black;
+            margin-bottom: 10px;
+        }
+        .work-steps {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .step {
+            width: 250px;
+            text-align: center;
+        }
+        .step img {
+            width: 100%;
+            height: 300px;
+            background-color: #ddd; /* Placeholder color */
+            border-radius: 10px;
+        }
+        .step p {
+            font-size: 16px;
+            margin-top: -50px;
+        }
+
+        /* Ready to Ship Section */
+        .ready-to-ship {
+            background-color: #222222;
+            text-align: center;
+            padding: 60px 20px;
+            margin-top: 40px;
+        }
+        .ready-to-ship h2 {
+            font-size: 28px;
+            color: white;
+        }
+        .ready-to-ship p {
+            font-size: 18px;
+            color: white;
+            margin-bottom: 20px;
+        }
+        .ready-to-ship .btn-contact {
+            background-color: white;
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .ready-to-ship .btn-contact:hover {
+            opacity: 0.8;
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #222;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 0px;
+        }
+        .footer h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .footer p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #bbb;
+        }
+        .footer .footer-links {
+            margin-bottom: 20px;
+        }
+        .footer .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+        .footer .footer-links a:hover {
+            text-decoration: underline;
+        }
+        .footer .contact-info {
+            font-size: 16px;
+            color: #bbb;
+        }
+        .footer .contact-info p {
+            margin: 5px 0;
+        }
+        .footer .copyright {
+            margin-top: 20px;
+            font-size: 14px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">Greeno Delivery</div>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="https://wa.me/0769833981" target="_blank">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Fast & Reliable Delivery Services</h1>
+        <p>We deliver your packages safely and on time, every time.</p>
+        <div class="btn-container">
+            <a href="services.html" class="btn btn-services">Services</a>
+            <a href="https://wa.me/0769833981" target="_blank" class="btn btn-contact">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- How It Works Section -->
+    <div class="how-it-works">
+        <h2>How It Works?</h2>
+        <div class="work-steps">
+            <div class="step">
+                <img src="images/image1.png" alt="Step 1">
+                <p>1. Place your order</p>
+            </div>
+            <div class="step">
+                <img src="images/image2.png" alt="Step 2">
+                <p>2. We pick up your package</p>
+            </div>
+            <div class="step">
+                <img src="images/image3.png" alt="Step 3">
+                <p>3. Delivered to your doorstep</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ready to Ship Section -->
+    <div class="ready-to-ship">
+        <h2>Ready to Ship?</h2>
+        <p>Contact us today to get a quote for your delivery needs. We're here to help!</p>
+        <a href="https://wa.me/0769833981" target="_blank" class="btn-contact">Contact Us Now</a>
+    </div>
+
+            <!-- Footer -->
+    <div class="footer">
+        <div class="footer-container">
+            <!-- Left Section: Company Info -->
+            <div class="footer-section">
+                <h3>Greeno Delivery</h3>
+                <p>Fast, reliable delivery services for all your needs. We ensure your packages arrive safely and on time.</p>
+            </div>
+
+            <!-- Center Section: Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="services.html">Services</a>
+                <a href="#">About Us</a>
+                <a href="https://wa.me/0769833981" target="_blank">Contact Us</a>
+            </div>
+
+            <!-- Right Section: Contact Info -->
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📞 +94 76 983 3981</p>
+                <p>📧 info@swiftdelivery.com</p>
+                <p>📍 123 Delivery Street, Colombo, Sri Lanka</p>
+            </div>
+        </div>
+
+        <!-- Divider Line -->
+        <hr class="footer-divider">
+
+        <!-- Copyright Section -->
+        <p class="copyright">© 2025 Greeno Delivery. All rights reserved.</p>
+    </div>
+
+    <style>
+        .footer {
+            background-color: #222;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .footer-section {
+            width: 30%;
+            min-width: 250px;
+        }
+        .footer-section h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .footer-section p, .footer-section a {
+            font-size: 16px;
+            color: white;
+            display: block;
+            text-decoration: none;
+            margin-bottom: 8px;
+        }
+        .footer-section a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        .footer-divider {
+            border: 0;
+            height: 1px;
+            background: white;
+            margin: 20px auto;
+            width: 100%;
+        }
+        .copyright {
+            font-size: 14px;
+            color: white;
+            margin-top: 10px;
+        }
+    </style>
+
+</body>
+</html>
